@@ -74,8 +74,28 @@ Describe here your statistical analysis, including what type of ANOVA model you 
 library(tidyverse)
 library(car)
 library(ggplot2)
+
+
 ```
 
+```{r data import}
+Lm_df <- read.csv("../data/Copy-Listeria.csv")
+Lm_df
+
+```
+
+# b) EDA tables  
+```{r summary}
+summary(rcbd_df)
+```
+
+```{r glimpse}
+glimpse(rcbd_df)
+```
+# c) Wrangling
+```{r rcbd_dfw}
+
+```
 
 # Results
 
