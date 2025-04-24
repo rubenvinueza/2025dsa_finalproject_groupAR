@@ -80,12 +80,37 @@ library(emmeans)   #for post hoc comparisons
 #install.packages("Matrix")
 ```
 
-#Read data
+#Load data
 ```{r}
 
 ```
 
+#Clean and inspect data
 
+#Rename variables for easier handling
+
+#Specify factor levels
+
+
+#Mixed model:Biological Replication as random effect
+
+
+#Model summary
+
+
+#Anova table(type 3)
+
+
+#Post hoc comparisons
+
+
+#Main effect (if interaction is  significant or not)
+
+
+#Plot estimated marginal means
+
+
+#Diagnostic plots
 
 # Results
 
