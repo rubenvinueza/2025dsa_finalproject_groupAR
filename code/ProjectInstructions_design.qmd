@@ -1,6 +1,6 @@
 ---
 title: "Data Science Applied to Ag - Final Project - Design"
-author: "Aytan Pirverdiyeva  & Ruben Vinueza"
+author: "Aytan Pirverdiyeva 1 & FULL NAME STUDENT 2"
 format:
   html:
     code-fold: false
@@ -60,7 +60,7 @@ Three commonly used FCS materials were selected: interlocking belt (IB) made of 
 
 Clearly describe your study design here, including treatment design (which factors and levels, the hierarchy among them, etc.), and your experimental design (number of reps/blocks, how was randomization performed, etc.), as we talked about in class.
 
-**#Study Design**
+**Study Design**
 
 To ensure robust data collection, a randomized block design with three biological replicates per treatment will be used. The effectiveness of each sanitization treatment is quantified using ANOVA (mixed model), with preliminary checks for data normality to validate the statistical approaches. Nine samples were evaluated per treatment combination, and a mixed model was used to determine significant differences using ANOVA.
 
@@ -68,34 +68,25 @@ To ensure robust data collection, a randomized block design with three biologica
 
 Describe here your statistical analysis, including what type of ANOVA model you ran (based on the design above), what was your response variable, what were your explanatory variables and how were the explanatory variables treated (random or fixed). Provide your alpha level. Explain which function from which package you used to analyze this data. Explain how you checked linear model assumptions and whether or not they were met. Overall, make sure you explain in sufficient detail that, if given your data, a knowledgeable person would be able to reproduce your analysis exactly.
 
-**#Script**
+**#Script** 
 #Setup
 ```{r}
 library(tidyverse)
 library(car)
 library(ggplot2)
-
-
+library(lme4)
+library(lmerTest)  #for p-values in mixed model
+library(emmeans)   #for post hoc comparisons
+#install.packages("Matrix")
 ```
 
-```{r data import}
-Lm_df <- read.csv("../data/Copy-Listeria.csv")
-Lm_df
-
+#Read data
+```{r}
+getwd()
 ```
 
-# b) EDA tables  
-```{r summary}
-summary(rcbd_df)
-```
 
-```{r glimpse}
-glimpse(rcbd_df)
-```
-# c) Wrangling
-```{r rcbd_dfw}
 
-```
 
 # Results
 
