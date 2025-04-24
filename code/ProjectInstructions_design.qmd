@@ -86,6 +86,10 @@ library(emmeans)   #for post hoc comparisons
 ```
 
 #Clean and inspect data
+```{r}
+
+```
+
 
 #Rename variables for easier handling
 
