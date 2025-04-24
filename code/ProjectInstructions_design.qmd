@@ -112,6 +112,8 @@ library(emmeans)   #for post hoc comparisons
 
 #Diagnostic plots
 
+
+
 # Results
 
 Here is where the coding is going to happen, and it will be completely up to you. Include under this section as many sub-sections (using ##) and as many chunks needed to create the analytical workflow for your analysis, starting at loading packages and data, wrangling, EDA, modeling, assumptions checking, ANOVA table, means, pairwise comparisons, and final publication-quality plot.
