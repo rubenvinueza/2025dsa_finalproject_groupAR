@@ -105,6 +105,10 @@ library(emmeans)   #for post hoc comparisons
 
 
 #Mixed model:Biological Replication as random effect
+```{r}
+
+```
+
 
 
 #Model summary
