@@ -82,9 +82,8 @@ library(emmeans)   #for post hoc comparisons
 
 #Read data
 ```{r}
-getwd()
-```
 
+```
 
 
 
