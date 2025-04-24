@@ -1,6 +1,6 @@
 ---
 title: "Data Science Applied to Ag - Final Project - Design"
-author: "Aytan Pirverdiyeva 1 & FULL NAME STUDENT 2"
+author: "Aytan Pirverdiyeva  & Ruben Vinueza"
 format:
   html:
     code-fold: false
