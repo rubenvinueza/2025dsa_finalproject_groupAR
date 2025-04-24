@@ -92,6 +92,10 @@ library(emmeans)   #for post hoc comparisons
 
 
 #Rename variables for easier handling
+```{r}
+
+```
+
 
 #Specify factor levels
 
