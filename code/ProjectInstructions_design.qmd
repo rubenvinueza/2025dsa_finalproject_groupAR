@@ -1,6 +1,6 @@
 ---
 title: "Data Science Applied to Ag - Final Project - Design"
-author: "Aytan Pirverdiyeva 1 & FULL NAME STUDENT 2"
+author: "Aytan Pirverdiyeva  & Ruben Vinueza"
 format:
   html:
     code-fold: false
@@ -38,13 +38,13 @@ In the fresh produce industry, increased concerns of cross-contamination from fo
 
 Describe here your hypothesis, followed by your objectives. Make sure your hypothesis are testable and bold, and objectives are clear.
 
-**#Variables and Research Hypotheses**
+**Variables and Research Hypotheses**
 
-***#Hypothesis 1:*** Chemical sanitizing agents will be effective in inactivating *Salmonella* and *Listeria monocytogenes.* Treating food contact surfaces with commercially available chemicals containing chlorine and peracetic acid as a source of reactive oxygen species will decrease the potential pathogens *via* oxidizing essential parts of bacteria.
+***Hypothesis 1:*** Chemical sanitizing agents will be effective in inactivating *Salmonella* and *Listeria monocytogenes.* Treating food contact surfaces with commercially available chemicals containing chlorine and peracetic acid as a source of reactive oxygen species will decrease the potential pathogens *via* oxidizing essential parts of bacteria.
 
 Previously reported studies have shown that pathogenic bacteria, particularly *Salmonella* and *Listeria*, are considerably less prevalent on food contact surfaces that have been treated with specific chemical agents such as peracetic acid and chlorine versus untreated surfaces. As a result, these agents are suitable for sanitization procedures in food safety measures because of their quantifiable and considerable efficacy.
 
-***#Hypothesis 2:*** Surface material characteristics will impact the efficacy of cleaning and sanitization approaches evaluated. As a variable, the kind of surface material - such as foam, PVC, and interlocking belt-polypropylene - affects how the sanitization procedure turns out.
+***Hypothesis 2:*** Surface material characteristics will impact the efficacy of cleaning and sanitization approaches evaluated. As a variable, the kind of surface material - such as foam, PVC, and interlocking belt-polypropylene - affects how the sanitization procedure turns out.
 
 Depending on the physical and chemical nature of the surface materials – such as porosity, hydrophobicity, and surface roughness different sanitization techniques will no longer effectively eradicate *Salmonella* and *Listeria* from food contact surfaces. Materials that are resistant to bacterial contamination and have varying levels of sanitization efficiency, such as foam, PVC, and interlocking belt-polypropylene, will be considered when selecting materials for food processing facilities that are safer.
 
@@ -52,7 +52,7 @@ Depending on the physical and chemical nature of the surface materials – such
 
 Describe here your overall material and methods as it pertains to the analysis you will conduct, including study description, site/setup description, what equipment was used, etc. just like you would in a paper. Make sure to clearly explain what was measured and how.
 
-**#Material and Methods**
+**Material and Methods**
 
 Three commonly used FCS materials were selected: interlocking belt (IB) made of polypropylene, polyvinyl chloride (PVC) rollers, and closed-cell foam (CF). Coupons were spot inoculated with \~8 log CFU of an LM cocktail consisting of five produce-related outbreak strains adapted to 80 ppm rifampicin and allowed to dry for 1 h in a biosafety cabinet. FCSs were cleaned with a detergent applied as a liquid with manual brushing or as a foam, followed by rinsing and sanitization with free chlorine (350 ppm), peroxyacetic acid (350 ppm), or no sanitizer. A control group received no treatment. The coupons were neutralized in 100 mL Dey-Engley broth with 0.1 % (v/v) Tween 80 and spiral plated onto Tryptic soy agar with rifampicin (TSAR). Plates were incubated at 35 °C and enumerated after 48 h.
 
@@ -60,21 +60,74 @@ Three commonly used FCS materials were selected: interlocking belt (IB) made of 
 
 Clearly describe your study design here, including treatment design (which factors and levels, the hierarchy among them, etc.), and your experimental design (number of reps/blocks, how was randomization performed, etc.), as we talked about in class.
 
-**#Study Design**
+**Study Design**
 
 To ensure robust data collection, a randomized block design with three biological replicates per treatment will be used. The effectiveness of each sanitization treatment is quantified using ANOVA (mixed model), with preliminary checks for data normality to validate the statistical approaches. Nine samples were evaluated per treatment combination, and a mixed model was used to determine significant differences using ANOVA.
 
-## Statistical analysis
+# Statistical analysis
 
 Describe here your statistical analysis, including what type of ANOVA model you ran (based on the design above), what was your response variable, what were your explanatory variables and how were the explanatory variables treated (random or fixed). Provide your alpha level. Explain which function from which package you used to analyze this data. Explain how you checked linear model assumptions and whether or not they were met. Overall, make sure you explain in sufficient detail that, if given your data, a knowledgeable person would be able to reproduce your analysis exactly.
 
-**#Script**
+**Script** 
 #Setup
 ```{r}
 library(tidyverse)
 library(car)
 library(ggplot2)
+library(lme4)
+library(lmerTest)  #for p-values in mixed model
+library(emmeans)   #for post hoc comparisons
+#install.packages("Matrix")
 ```
+
+#Load data
+```{r}
+
+```
+
+#Clean and inspect data
+```{r}
+
+```
+
+
+#Rename variables for easier handling
+```{r}
+
+```
+
+
+#Specify factor levels
+```{r}
+
+```
+
+
+
+#Mixed model:Biological Replication as random effect
+```{r}
+
+```
+
+
+
+#Model summary
+
+
+#Anova table(type 3)
+
+
+#Post hoc comparisons
+
+
+#Main effect (if interaction is  significant or not)
+
+
+#Plot estimated marginal means
+
+
+#Diagnostic plots
+
 
 
 # Results
