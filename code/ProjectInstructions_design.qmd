@@ -62,13 +62,20 @@ Clearly describe your study design here, including treatment design (which facto
 
 **#Study Design**
 
-Nine samples were evaluated per treatment combination, with a mixed model used to determine significant differences using ANOVA.
+To ensure robust data collection, a randomized block design with three biological replicates per treatment will be used. The effectiveness of each sanitization treatment is quantified using ANOVA (mixed model), with preliminary checks for data normality to validate the statistical approaches. Nine samples were evaluated per treatment combination, and a mixed model was used to determine significant differences using ANOVA.
 
 ## Statistical analysis
 
 Describe here your statistical analysis, including what type of ANOVA model you ran (based on the design above), what was your response variable, what were your explanatory variables and how were the explanatory variables treated (random or fixed). Provide your alpha level. Explain which function from which package you used to analyze this data. Explain how you checked linear model assumptions and whether or not they were met. Overall, make sure you explain in sufficient detail that, if given your data, a knowledgeable person would be able to reproduce your analysis exactly.
 
 **#Script**
+#Setup
+```{r}
+library(tidyverse)
+library(car)
+library(ggplot2)
+```
+
 
 # Results
 
